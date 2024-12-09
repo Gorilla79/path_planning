@@ -22,7 +22,7 @@
 
 * 거리 변환 (Distance Transform):
 
-* distance_transform_edt를 사용하여 그리드 맵에서 벽(값이 0)로부터 각 점까지의 거리를 계산합니다.
+  * distance_transform_edt를 사용하여 그리드 맵에서 벽(값이 0)로부터 각 점까지의 거리를 계산합니다.
 * 결과는 벽에서 멀수록 값이 커지는 거리 맵입니다.
 * 가중치 맵 생성:
 
