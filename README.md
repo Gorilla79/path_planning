@@ -10,7 +10,7 @@
   
 ## Way point 추정 
 ![way_poin](https://github.com/user-attachments/assets/c05c3bab-109b-4229-b2c9-fdd86b95a22d)
-[사용파일]
+[사용 파일]<br/>
 way_point.py
 
 * 해당 이미지는 벽에서 일정 거리 떨어진 지점을 탐색하고 웨이포인트 후보를 선택
@@ -19,14 +19,23 @@ way_point.py
   * 커스텀 KMeans (백업)
 * 웨이포인트 출력 및 시각화
 
-[추가 테스트 파일]
+[추가 테스트 파일]<br/>
 way_point2.py / way_point3.py
 
+## Click_way_point
+![click_way_point1](https://github.com/user-attachments/assets/d2bb84d4-6ac8-480b-9460-3b42e09546e8)
+![click_way_point2](https://github.com/user-attachments/assets/6f936778-5eca-4003-a2a3-846f1eb70e72)
+[사용 파일] click_way_point2.py
+
+* 해당 이미지는 웨이포인트(9개)를 화면 클릭을 통해 선정
+* 추후 해당 웨이포인트를 기점으로 경로 탐색을 실행
+
+[테스트 파일] click_way_point.py
 
 # 최종 결과
 ![way_point_path_plannig_result](https://github.com/user-attachments/assets/25a4d10b-11d3-40b6-9fee-025e98994c09)
 <br/>
-[사용파일]<br/>
+[사용 파일]<br/>
 way_point_path_planning2.py
 
 ---
