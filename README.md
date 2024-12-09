@@ -8,3 +8,7 @@
 * Way point 선정 기준 = 탐색 가능 & 각 지점의 끝 점
 * path planning 알고리즘 = A star(A*)
   
+## Way point 추정 
+![way_poin](https://github.com/user-attachments/assets/c05c3bab-109b-4229-b2c9-fdd86b95a22d)
+
+해당 이미지는 
