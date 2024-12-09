@@ -35,17 +35,16 @@
   * 휴리스틱(유클리드 거리)과 현재 노드까지의 총 비용을 합산하여 경로를 탐색합니다.
   * 최소 비용 경로를 탐색하는 과정에서 가중치 맵을 활용하여 벽과의 거리를 유지합니다.
 
-<br/>
+<br/><br/>
 2. 세부 계산
-<br/>
 (1) 거리 변환<br/>
-* distance_transform_edt를 사용하여 거리 맵을 계산합니다.
+distance_transform_edt를 사용하여 거리 맵을 계산합니다.
 
 * 입력: grid_array (0: 벽, 1: 경로)
 * 출력: distance_map
-* 수식으로 표현하면:
+수식으로 표현하면:<br/>
 
-  * d(i,j)=min⁡(x,y)∈벽(i−x)2+(j−y)2d(i, j) = \min_{(x, y) \in \text{벽}} \sqrt{(i - x)^2 + (j - y)^2}d(i,j)=(x,y)∈wallsmin​(i−x)2+(j−y)2​
+  * “d(i,j)\=(x,y)∈wallsmin​(i−x)2+(j−y)2​”
 
   * 여기서 d(i,j)d(i, j)d(i,j)는 좌표 (i,j)(i, j)(i,j)가 벽까지의 최소 거리입니다.
 <br/>
