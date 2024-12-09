@@ -38,7 +38,7 @@
 <br/>
 2. 세부 계산
 <br/>
-(1) 거리 변환
+(1) 거리 변환<br/>
 * distance_transform_edt를 사용하여 거리 맵을 계산합니다.
 
 * 입력: grid_array (0: 벽, 1: 경로)
@@ -56,7 +56,7 @@
 * 입력: distance_map
 * 출력: weighted_grid
 * 수식:
-*  w(i,j)=Dmax⁡−d(i,j)w(i, j) = D_{\max} - d(i, j)w(i,j)=Dmax​− d(i,j)
+  * w(i,j)=Dmax⁡−d(i,j)w(i, j) = D_{\max} - d(i, j)w(i,j)=Dmax​− d(i,j)
 
 <br/>
 * 여기서 w(i,j)w(i, j)w(i,j)는 좌표 (i,j)(i, j)(i,j)의 가중치이고, Dmax⁡D_{\max}Dmax​는 거리 맵의 최대값입니다.
