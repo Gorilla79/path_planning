@@ -10,13 +10,24 @@
   
 ## Way point 추정 
 ![way_poin](https://github.com/user-attachments/assets/c05c3bab-109b-4229-b2c9-fdd86b95a22d)
+[사용파일]
+way_point.py
 
-해당 이미지는 
+* 해당 이미지는 벽에서 일정 거리 떨어진 지점을 탐색하고 웨이포인트 후보를 선택
+* 클러스터링을 통한 웨이포인트를 생성
+  * KMeans 클러스터링
+  * 커스텀 KMeans (백업)
+* 웨이포인트 출력 및 시각화
+
+[추가 테스트 파일]
+way_point2.py / way_point3.py
 
 
 # 최종 결과
 ![way_point_path_plannig_result](https://github.com/user-attachments/assets/25a4d10b-11d3-40b6-9fee-025e98994c09)
 <br/>
+[사용파일]<br/>
+way_point_path_planning2.py
 
 ---
 
