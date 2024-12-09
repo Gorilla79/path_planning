@@ -38,28 +38,28 @@
 <br/>
 2. 세부 계산
 <br/>
-(1) 거리 변환<br/>
-  distance_transform_edt를 사용하여 거리 맵을 계산합니다.
+(1) 거리 변환
+* distance_transform_edt를 사용하여 거리 맵을 계산합니다.
 
 * 입력: grid_array (0: 벽, 1: 경로)
 * 출력: distance_map
-  수식으로 표현하면:
+* 수식으로 표현하면:
 
-  d(i,j)=min⁡(x,y)∈벽(i−x)2+(j−y)2d(i, j) = \min_{(x, y) \in \text{벽}} \sqrt{(i - x)^2 + (j - y)^2}d(i,j)=(x,y)∈wallsmin​(i−x)2+(j−y)2​
+  * d(i,j)=min⁡(x,y)∈벽(i−x)2+(j−y)2d(i, j) = \min_{(x, y) \in \text{벽}} \sqrt{(i - x)^2 + (j - y)^2}d(i,j)=(x,y)∈wallsmin​(i−x)2+(j−y)2​
 
-  여기서 d(i,j)d(i, j)d(i,j)는 좌표 (i,j)(i, j)(i,j)가 벽까지의 최소 거리입니다.
+  * 여기서 d(i,j)d(i, j)d(i,j)는 좌표 (i,j)(i, j)(i,j)가 벽까지의 최소 거리입니다.
 <br/>
+
 (2) 가중치 맵
 * 거리 맵을 반전하여 벽에서 멀수록 낮은 가중치를 갖게 만듭니다.
 
 * 입력: distance_map
 * 출력: weighted_grid
 * 수식:
-<br/>
-  w(i,j)=Dmax⁡−d(i,j)w(i, j) = D_{\max} - d(i, j)w(i,j)=Dmax​− d(i,j)
+*  w(i,j)=Dmax⁡−d(i,j)w(i, j) = D_{\max} - d(i, j)w(i,j)=Dmax​− d(i,j)
 
 <br/>
-여기서 w(i,j)w(i, j)w(i,j)는 좌표 (i,j)(i, j)(i,j)의 가중치이고, Dmax⁡D_{\max}Dmax​는 거리 맵의 최대값입니다.
+* 여기서 w(i,j)w(i, j)w(i,j)는 좌표 (i,j)(i, j)(i,j)의 가중치이고, Dmax⁡D_{\max}Dmax​는 거리 맵의 최대값입니다.
 <br/>
 
 (3) A 알고리즘*
@@ -72,8 +72,7 @@
   * h(n)h(n)h(n): 현재 노드에서 목표점까지의 휴리스틱 비용 (유클리드 거리)
 
 * 휴리스틱:
-<br/>
-  h(n)=(xn−xg)2+(yn−yg)2h(n) = \sqrt{(x_n - x_g)^2 + (y_n - y_g)^2 }h(n)=(xn​−xg​)2+(in​−yg​)2​
+  * h(n)=(xn−xg)2+(yn−yg)2h(n) = \sqrt{(x_n - x_g)^2 + (y_n - y_g)^2 }h(n)=(xn​−xg​)2+(in​−yg​)2​
 
 <br/>
 3. 경로 탐색 과정
