@@ -37,7 +37,8 @@
 
 <br/>
 2. 세부 계산
-(1) 거리 변환
+<br/>
+(1) 거리 변환<br/>
   distance_transform_edt를 사용하여 거리 맵을 계산합니다.
 
 * 입력: grid_array (0: 벽, 1: 경로)
